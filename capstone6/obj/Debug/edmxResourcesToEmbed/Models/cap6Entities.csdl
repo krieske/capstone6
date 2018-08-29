@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="capstone6Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="tasklist">
+    <Key>
+      <PropertyRef Name="taskID" />
+    </Key>
+    <Property Name="taskID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="task" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="descrip" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="dateby" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="status" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="capstone6Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="tasklists" EntityType="Self.tasklist" />
+  </EntityContainer>
+</Schema>

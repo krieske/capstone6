@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="capstone6ModelStoreContainer" CdmEntityContainer="capstone6Entities">
+    <EntitySetMapping Name="tasklists">
+      <EntityTypeMapping TypeName="capstone6Model.tasklist">
+        <MappingFragment StoreEntitySet="tasklist">
+          <ScalarProperty Name="taskID" ColumnName="taskID" />
+          <ScalarProperty Name="task" ColumnName="task" />
+          <ScalarProperty Name="descrip" ColumnName="descrip" />
+          <ScalarProperty Name="dateby" ColumnName="dateby" />
+          <ScalarProperty Name="status" ColumnName="status" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
